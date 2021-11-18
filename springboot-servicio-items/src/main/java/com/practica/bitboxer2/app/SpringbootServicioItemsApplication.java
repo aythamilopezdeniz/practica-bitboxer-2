@@ -2,6 +2,7 @@ package com.practica.bitboxer2.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.AsyncConfigurer;
@@ -13,6 +14,9 @@ import java.util.concurrent.Executor;
 @EnableAsync
 @EnableEurekaClient
 @SpringBootApplication
+//@EntityScan({"com.springboot.servicio.app.usuarios.commons.model.entity",
+//        "com.springboot.servicio.app.commons.precios.model.entity",
+//        "com.springboot.servicio.app.commons.suministrador.model.entity"})
 public class SpringbootServicioItemsApplication implements AsyncConfigurer {
 
     public static void main(String[] args) {

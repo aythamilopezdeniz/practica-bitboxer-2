@@ -8,10 +8,10 @@
 		<version>2.5.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.practica.bitboxer2.app.items</groupId>
-	<artifactId>springboot-servicio-items</artifactId>
+	<groupId>com.springboot.servicio.app.suministradores</groupId>
+	<artifactId>springboot-servicio-suministradores</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-servicio-items</name>
+	<name>springboot-servicio-suministradores</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
@@ -19,36 +19,21 @@
 	</properties>
 	<dependencies>
 <!--		<dependency>-->
-<!--			<groupId>com.springboot.servicio.app.usuarios.commons</groupId>-->
-<!--			<artifactId>springboot-servicio-commons-precios</artifactId>-->
-<!--			<version>0.0.1-SNAPSHOT</version>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>com.springboot.servicio.app.commons.precios</groupId>-->
-<!--			<artifactId>springboot-servicio-commons-precios</artifactId>-->
-<!--			<version>0.0.1-SNAPSHOT</version>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
 <!--			<groupId>com.springboot.servicio.app.commons.suministrador</groupId>-->
 <!--			<artifactId>springboot-servicio-commons-suministrador</artifactId>-->
 <!--			<version>0.0.1-SNAPSHOT</version>-->
 <!--		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.hibernate.validator</groupId>
-			<artifactId>hibernate-validator</artifactId>
-			<version>6.0.18.Final</version>
 		</dependency>
 
 		<dependency>
@@ -66,6 +51,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>6.0.18.Final</version>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>

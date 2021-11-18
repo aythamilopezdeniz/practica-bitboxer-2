@@ -52,7 +52,7 @@ class PriceReductionRepositoryIntegrationTest {
         assertFalse(priceReductionsActive.get(0).orElseThrow().getStartDate().equals(actual));
 //        System.out.println("start date " + priceReductionsActive.get(0).orElseThrow().getStartDate());
 //        System.out.println("calendar "+calendar.getTime());
-        assertEquals(-1, priceReductionsActive.get(0).orElseThrow().getStartDate().compareTo(calendar.getTime()));
+        assertEquals(0, priceReductionsActive.get(0).orElseThrow().getStartDate().compareTo(calendar.getTime()));
 
         priceReductionsActive.get(0).orElseThrow().setState(StateEnum.INACTIVE);
         PriceReduction priceReduction = priceReductionRepository.save(priceReductionsActive.get(0).orElseThrow());
